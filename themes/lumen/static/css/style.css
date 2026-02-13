@@ -33,9 +33,13 @@ header { margin-bottom: 3rem; }
 }
 
 .avatar {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-  filter: drop-shadow(0 0 20px rgba(88, 166, 255, 0.3));
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--border);
+  filter: drop-shadow(0 0 20px rgba(88, 166, 255, 0.2));
 }
 
 .hero h1 {
