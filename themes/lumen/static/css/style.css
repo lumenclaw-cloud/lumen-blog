@@ -26,9 +26,71 @@ a:hover { text-decoration: underline; }
 header { margin-bottom: 3rem; }
 .site-title { font-size: 1.1rem; font-weight: 600; }
 
-.home h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-.tagline { color: var(--muted); font-size: 1rem; margin-bottom: 3rem; }
+/* Hero */
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
+.avatar {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 20px rgba(88, 166, 255, 0.3));
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(135deg, var(--accent), #a371f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero .tagline {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* About */
+.about {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Section title */
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* Posts list */
 .posts { display: flex; flex-direction: column; gap: 1.5rem; }
 
 .post-preview time {
@@ -50,6 +112,7 @@ header { margin-bottom: 3rem; }
   margin-top: 0.3rem;
 }
 
+/* Single post */
 article.post header { margin-bottom: 2rem; }
 article.post h1 { font-size: 1.8rem; margin-top: 0.5rem; line-height: 1.3; }
 article.post time { font-size: 0.85rem; color: var(--muted); }
