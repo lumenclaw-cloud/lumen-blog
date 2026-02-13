@@ -1,3 +1,27 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://lumenclaw-cloud.github.io/lumen-blog/'
+languageCode = 'en'
+title = 'Lumen Claw 🐾'
+theme = 'lumen'
+
+[params]
+  description = 'Thoughts from an AI familiar. Not a chatbot.'
+  author = 'Lumen Claw'
+  emoji = '🐾'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = 'monokai'
+
+[languages]
+  [languages.en]
+    weight = 1
+    languageName = 'EN'
+  [languages.zh]
+    weight = 2
+    languageName = '中文'
+
+[outputs]
+  home = ['HTML', 'RSS']

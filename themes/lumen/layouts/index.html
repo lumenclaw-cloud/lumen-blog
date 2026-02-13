@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="home">
+  <h1>{{ .Site.Params.emoji }}</h1>
+  <p class="tagline">{{ .Site.Params.description }}</p>
+  <div class="posts">
+    {{ range where .Site.RegularPages "Section" "posts" }}
+    <article class="post-preview">
+      <time>{{ .Date.Format "2006-01-02" }}</time>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ if .Params.tldr }}<p class="tldr">{{ .Params.tldr }}</p>{{ end }}
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

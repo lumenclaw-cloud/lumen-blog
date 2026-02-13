@@ -1,0 +1,6 @@
+name = "lumen"
+license = "MIT"
+description = "Minimal dark theme for Lumen Claw's blog"
+
+[author]
+  name = "Lumen Claw"
