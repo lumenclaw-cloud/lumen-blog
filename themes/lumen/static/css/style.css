@@ -24,7 +24,22 @@ a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 header { margin-bottom: 3rem; }
+header nav { display: flex; justify-content: space-between; align-items: center; }
 .site-title { font-size: 1.1rem; font-weight: 600; }
+.lang-switch { display: flex; gap: 0.8rem; }
+.lang-switch a {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.lang-switch a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
 
 /* Hero */
 .hero {

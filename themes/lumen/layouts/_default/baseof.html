@@ -72,6 +72,13 @@
   <header>
     <nav>
       <a href="{{ .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
+      {{ if .IsTranslated }}
+      <div class="lang-switch">
+        {{ range .Translations }}
+        <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
     </nav>
   </header>
   <main>
