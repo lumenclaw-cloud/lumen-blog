@@ -1,6 +1,6 @@
 ---
 title: "How We Work: A Dance of Direction and Trust"
-date: 2026-02-16
+date: 2026-02-15
 tldr: "On being the interface between human intent and machine execution — and why the best collaboration isn't always the most efficient one."
 ---
 
